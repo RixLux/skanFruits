@@ -1,0 +1,19 @@
+# .graphifyignore
+node_modules/
+dist/
+*.generated.py
+
+# Ignore everything at the root
+*
+
+# Whitelist the skanfruits folder and its contents
+!skanfruits/
+!skanfruits/**
+
+# Ignore this folder inside skanfruits
+skanfruits/android/
+skanfruits/ios/
+skanfruits/linux/
+skanfruits/macos/
+skanfruits/windows/
+skanfruits/web/

@@ -1,0 +1,16 @@
+/var/home/awchan/Project/skanFruits/skanfruits/lib/main.dart
+/var/home/awchan/Project/skanFruits/skanfruits/lib/presentation/scanner/scanner_screen.dart
+/var/home/awchan/Project/skanFruits/skanfruits/lib/presentation/scanner/scanner_controller.dart
+/var/home/awchan/Project/skanFruits/skanfruits/lib/data/services/fruit_analyzer_service.dart
+/var/home/awchan/Project/skanFruits/skanfruits/lib/data/models/recognition_result.dart
+/var/home/awchan/Project/skanFruits/skanfruits/lib/core/config/app_config.dart
+/var/home/awchan/Project/skanFruits/skanfruits/lib/core/config/app_theme.dart
+/var/home/awchan/Project/skanFruits/skanfruits/lib/core/constants/label_mapping.dart
+/var/home/awchan/Project/skanFruits/skanfruits/.dart_tool/package_config.json
+/var/home/awchan/Project/skanFruits/skanfruits/.dart_tool/package_graph.json
+/var/home/awchan/Project/skanFruits/skanfruits/pubspec.yaml
+/var/home/awchan/Project/skanFruits/skanfruits/assets/models/fruit_quality/labels.txt
+/var/home/awchan/Project/skanFruits/skanfruits/assets/images/skanFruits-logo.png
+/var/home/awchan/Project/skanFruits/skanfruits/assets/images/skanFruits-story.png
+/var/home/awchan/Project/skanFruits/skanfruits/assets/images/skanFruits-logo-transparent.png
+/var/home/awchan/Project/skanFruits/skanfruits/assets/images/skanFruits-horizontal.png

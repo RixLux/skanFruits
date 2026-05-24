@@ -1,0 +1,253 @@
+{
+  "nodes": [
+    {
+      "id": "lib_main_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/main.dart"
+    },
+    {
+      "id": "lib_main_skanfruitapp",
+      "label": "SkanFruitApp",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/main.dart"
+    },
+    {
+      "id": "scanner_scanner_screen_scannerscreen",
+      "label": "ScannerScreen",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_screen.dart"
+    },
+    {
+      "id": "scanner_scanner_controller_scannercontroller",
+      "label": "ScannerController",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_controller.dart",
+      "rationale": "Implements throttling (800ms) to prevent overlapping inference frames."
+    },
+    {
+      "id": "scanner_scanner_controller_scannerstate",
+      "label": "ScannerState",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_controller.dart"
+    },
+    {
+      "id": "scanner_scanner_controller_scannerprovider",
+      "label": "scannerProvider",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_controller.dart"
+    },
+    {
+      "id": "services_fruit_analyzer_service_fruitanalyzerservice",
+      "label": "FruitAnalyzerService",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/data/services/fruit_analyzer_service.dart",
+      "rationale": "Uses TFLite Interpreter to run inference on fruit images with MobileNetV2-based models."
+    },
+    {
+      "id": "models_recognition_result_recognitionresult",
+      "label": "RecognitionResult",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/data/models/recognition_result.dart"
+    },
+    {
+      "id": "config_app_config_appconfig",
+      "label": "AppConfig",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/core/config/app_config.dart",
+      "rationale": "Centralizes model configuration and metadata in a ModelRegistry."
+    },
+    {
+      "id": "config_app_config_modelmanifest",
+      "label": "ModelManifest",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/core/config/app_config.dart"
+    },
+    {
+      "id": "config_app_config_aimodelmode",
+      "label": "AIModelMode",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/core/config/app_config.dart"
+    },
+    {
+      "id": "config_app_theme_apptheme",
+      "label": "AppTheme",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/core/config/app_theme.dart"
+    },
+    {
+      "id": "constants_label_mapping_labelmapping",
+      "label": "LabelMapping",
+      "file_type": "code",
+      "source_file": "skanfruits/lib/core/constants/label_mapping.dart",
+      "rationale": "Decouples raw model labels from human-readable Indonesian strings."
+    },
+    {
+      "id": "fruit_quality_labels_txt",
+      "label": "labels.txt",
+      "file_type": "document",
+      "source_file": "skanfruits/assets/models/fruit_quality/labels.txt"
+    },
+    {
+      "id": "images_skanfruits_logo_png",
+      "label": "skanFruits-logo.png",
+      "file_type": "image",
+      "source_file": "skanfruits/assets/images/skanFruits-logo.png"
+    },
+    {
+      "id": "images_skanfruits_logo_transparent_png",
+      "label": "skanFruits-logo-transparent.png",
+      "file_type": "image",
+      "source_file": "skanfruits/assets/images/skanFruits-logo-transparent.png"
+    },
+    {
+      "id": "images_skanfruits_horizontal_png",
+      "label": "skanFruits-horizontal.png",
+      "file_type": "image",
+      "source_file": "skanfruits/assets/images/skanFruits-horizontal.png"
+    },
+    {
+      "id": "images_skanfruits_story_png",
+      "label": "skanFruits-story.png",
+      "file_type": "image",
+      "source_file": "skanfruits/assets/images/skanFruits-story.png"
+    }
+  ],
+  "edges": [
+    {
+      "source": "lib_main_main",
+      "target": "lib_main_skanfruitapp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/main.dart"
+    },
+    {
+      "source": "lib_main_skanfruitapp",
+      "target": "config_app_config_appconfig",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/main.dart"
+    },
+    {
+      "source": "lib_main_skanfruitapp",
+      "target": "config_app_theme_apptheme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/main.dart"
+    },
+    {
+      "source": "lib_main_skanfruitapp",
+      "target": "scanner_scanner_screen_scannerscreen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/main.dart"
+    },
+    {
+      "source": "scanner_scanner_screen_scannerscreen",
+      "target": "scanner_scanner_controller_scannerprovider",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_screen.dart"
+    },
+    {
+      "source": "scanner_scanner_controller_scannercontroller",
+      "target": "services_fruit_analyzer_service_fruitanalyzerservice",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_controller.dart"
+    },
+    {
+      "source": "scanner_scanner_controller_scannercontroller",
+      "target": "scanner_scanner_controller_scannerstate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_controller.dart"
+    },
+    {
+      "source": "services_fruit_analyzer_service_fruitanalyzerservice",
+      "target": "config_app_config_appconfig",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/data/services/fruit_analyzer_service.dart"
+    },
+    {
+      "source": "services_fruit_analyzer_service_fruitanalyzerservice",
+      "target": "models_recognition_result_recognitionresult",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/data/services/fruit_analyzer_service.dart"
+    },
+    {
+      "source": "models_recognition_result_recognitionresult",
+      "target": "constants_label_mapping_labelmapping",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skanfruits/lib/data/models/recognition_result.dart"
+    },
+    {
+      "source": "constants_label_mapping_labelmapping",
+      "target": "fruit_quality_labels_txt",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "skanfruits/lib/core/constants/label_mapping.dart"
+    },
+    {
+      "source": "scanner_scanner_screen_scannerscreen",
+      "target": "scanner_scanner_controller_scannercontroller",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_screen.dart"
+    },
+    {
+      "source": "images_skanfruits_logo_png",
+      "target": "lib_main_skanfruitapp",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "skanfruits/pubspec.yaml"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "scanner_flow",
+      "label": "Inference Flow",
+      "nodes": [
+        "scanner_scanner_screen_scannerscreen",
+        "scanner_scanner_controller_scannercontroller",
+        "services_fruit_analyzer_service_fruitanalyzerservice",
+        "models_recognition_result_recognitionresult"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "skanfruits/lib/presentation/scanner/scanner_controller.dart"
+    },
+    {
+      "id": "app_configuration",
+      "label": "App Configuration",
+      "nodes": [
+        "config_app_config_appconfig",
+        "config_app_theme_apptheme",
+        "constants_label_mapping_labelmapping"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "skanfruits/lib/core/config/app_config.dart"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

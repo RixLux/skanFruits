@@ -17,7 +17,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -221,3 +220,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#Agentic Development
+.agents/
+.gemini/
+GEMINI.md
+
+# mtime-based, breaks after git clone
+graphify-out/manifest.json
+# local only
+graphify-out/cost.json
+# optional: commit for speed, skip to keep repo small
+graphify-out/cache/
+
+github.url
+github.desktop
+github.txt
+
+
+# --- MkDocs ---
+site/
+*/__pycache__/
+*.pyc
+
