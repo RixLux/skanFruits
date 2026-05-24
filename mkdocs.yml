@@ -42,6 +42,17 @@ markdown_extensions:
       alternate_style: true
   - attr_list
   - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables
 
 plugins:
   - search
@@ -56,3 +67,6 @@ nav:
   - CHANGELOG: CHANGELOG.md
   - Master Plan: Master_plan.md
   - PRD: PRD.md
+  - CHANGELOG: .backup/20260525_000938/CHANGELOG.md
+  - Master Plan: .backup/20260525_000938/Master_plan.md
+  - PRD: .backup/20260525_000938/PRD.md

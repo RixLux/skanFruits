@@ -243,3 +243,4 @@ site/
 */__pycache__/
 *.pyc
 
+docs/.backup/
