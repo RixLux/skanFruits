@@ -1,8 +1,20 @@
-:root { --md-typeset-color: #7E56C2; }
+/* --- TEMA LIGHT (DEFAULT) --- */
 [data-md-color-scheme="default"] {
-    --md-typeset-color: #7E56C2;
-    --md-code-fg-color: #4D21CB;
-    --md-typeset-a-color: #4D21CB;
-    --md-default-fg-color--light: #4D21CB;
+    --md-primary-fg-color: #1a1a1a;
+    --md-primary-fg-color--dark: #d32f2f;
+    --md-accent-fg-color: #d32f2f;
+
+    /* Warna link dan teks kode inline */
+    --md-typeset-a-color: #d32f2f;
+    --md-code-fg-color: #d32f2f;
 }
-[data-md-color-scheme="slate"] { --md-typeset-color: #e5e9f0; }
+
+/* --- TEMA DARK (SLATE) --- */
+[data-md-color-scheme="slate"] {
+    /* Menggunakan warna dark khusus pilihan user */
+    --md-primary-fg-color: #ffffff;
+    --md-accent-fg-color: #ffffff;
+
+    /* Kembalikan warna teks utama agar tetap putih/abu terang (bukan ikut warna light) */
+    --md-typeset-color: rgba(255, 255, 255, 0.82);
+}

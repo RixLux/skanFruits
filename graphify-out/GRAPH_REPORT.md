@@ -1,15 +1,31 @@
 # Graph Report - .  (2026-05-24)
 
 ## Corpus Check
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 - 16 files · ~9,699 words
 - Verdict: corpus is large enough that graph structure adds value.
 
+</details>
+
 ## Summary
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 - 247 nodes · 243 edges · 42 communities (28 shown, 14 thin omitted)
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
+</details>
+
 ## Community Hubs (Navigation)
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 - [[_COMMUNITY_Scanner UI & Camera Flow|Scanner UI & Camera Flow]]
 - [[_COMMUNITY_Windows Native Implementation|Windows Native Implementation]]
 - [[_COMMUNITY_AI Config & Label Mapping|AI Config & Label Mapping]]
@@ -45,7 +61,13 @@
 - [[_COMMUNITY_DPI Support|DPI Support]]
 - [[_COMMUNITY_AI Model Modes|AI Model Modes]]
 
+</details>
+
 ## God Nodes (most connected - your core abstractions)
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 1. `ScannerScreen` - 27 edges
 2. `MyApplication (GTK)` - 14 edges
 3. `ScannerController` - 13 edges
@@ -57,7 +79,13 @@
 9. `SkanFruitApp` - 6 edges
 10. `Win32Window()` - 5 edges
 
+</details>
+
 ## Surprising Connections (you probably didn't know these)
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 - `runner (executable)` --conceptually_related_to--> `wWinMain()`  [INFERRED]
   skanfruits/windows/runner/CMakeLists.txt → skanfruits/windows/runner/main.cpp
 - `Graphify Instructions` --rationale_for--> `Graphify Tool Hooks`  [EXTRACTED]
@@ -69,11 +97,22 @@
 - `ScannerScreen` --semantically_similar_to--> `ScannerController`  [INFERRED] [semantically similar]
   skanfruits/lib/presentation/scanner/scanner_screen.dart → skanfruits/lib/presentation/scanner/scanner_controller.dart
 
+</details>
+
 ## Hyperedges (group relationships)
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 - **Inference Flow** — scanner_scanner_screen_scannerscreen, scanner_scanner_controller_scannercontroller, services_fruit_analyzer_service_fruitanalyzerservice, models_recognition_result_recognitionresult [INFERRED 0.95]
 - **App Configuration** — config_app_config_appconfig, config_app_theme_apptheme, constants_label_mapping_labelmapping [INFERRED 0.85]
 
+</details>
+
 ## Communities (42 total, 14 thin omitted)
+
+<details markdown="1">
+<summary>Click to see details</summary>
 
 ### Community 0 - "Scanner UI & Camera Flow"
 Cohesion: 0.08
@@ -155,12 +194,24 @@ Nodes (4): Web Icon 512x512, Web Favicon, Web Entry Point, Web App Manifest
 Cohesion: 0.67
 Nodes (3): Launch Image Metadata, Launch Image PNG, Launch Screen Customization Guide
 
+</details>
+
 ## Knowledge Gaps
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 - **124 isolated node(s):** `BeforeTool`, `main`, `package:flutter/material.dart`, `package:flutter_test/flutter_test.dart`, `package:skanfruits/main.dart` (+119 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
+</details>
+
 ## Suggested Questions
+
+<details markdown="1">
+<summary>Click to see details</summary>
+
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ScannerScreen` connect `Scanner UI & Camera Flow` to `Branding & Main Entry`, `Scanning Controller & Logic`?**
@@ -177,3 +228,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
 - **Should `Debugging & LLDB Helpers` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+</details>
+

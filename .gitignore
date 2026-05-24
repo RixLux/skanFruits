@@ -244,3 +244,4 @@ site/
 *.pyc
 
 docs/.backup/
+.backup

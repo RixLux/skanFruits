@@ -10,19 +10,27 @@
 
 ## 1. Ringkasan Eksekutif & Tujuan (Objective)
 
-??? info "Click to see details"
-    Aplikasi ini bertujuan untuk mendeteksi kualitas dan kesegaran 9 jenis buah (total 18 kelas termasuk kondisi segar vs busuk) secara *real-time* langsung menggunakan kamera HP. Aplikasi ini memberikan transparansi penuh kepada pengguna dengan mengizinkan mereka memilih mode kecerdasan AI (Mode Cepat vs Mode Akurat) sesuai dengan spesifikasi perangkat atau kebutuhan akurasi mereka.
+<details markdown="1">
+<summary>Click to see details</summary>
 
-    ---
+Aplikasi ini bertujuan untuk mendeteksi kualitas dan kesegaran 9 jenis buah (total 18 kelas termasuk kondisi segar vs busuk) secara *real-time* langsung menggunakan kamera HP. Aplikasi ini memberikan transparansi penuh kepada pengguna dengan mengizinkan mereka memilih mode kecerdasan AI (Mode Cepat vs Mode Akurat) sesuai dengan spesifikasi perangkat atau kebutuhan akurasi mereka.
+
+---
+
+</details>
 
 ## 2. Target Pengguna (User Persona)
 
-??? info "Click to see details"
-    1. **Pengguna Awam / Konsumen Rumah Tangga:** Memastikan buah yang dibeli dalam kondisi segar.
-    2. **Pedagang Buah Kecil/UMKM:** Membantu menyortir stok buah harian dengan cepat tanpa alat mahal.
-    3. **Antusias AI / Penguji (Developer/Akademisi):** Membandingkan performa model AI hasil variasi *training* secara langsung di perangkat mobile.
+<details markdown="1">
+<summary>Click to see details</summary>
 
-    ---
+1. **Pengguna Awam / Konsumen Rumah Tangga:** Memastikan buah yang dibeli dalam kondisi segar.
+2. **Pedagang Buah Kecil/UMKM:** Membantu menyortir stok buah harian dengan cepat tanpa alat mahal.
+3. **Antusias AI / Penguji (Developer/Akademisi):** Membandingkan performa model AI hasil variasi *training* secara langsung di perangkat mobile.
+
+---
+
+</details>
 
 ## 3. Fitur Utama & Kebutuhan Fungsional
 
@@ -99,17 +107,25 @@ lib/
 
 ## 5. Kebutuhan Non-Fungsional (Non-Functional Requirements)
 
-??? info "Click to see details"
-    * **Performa Kecepatan:** Waktu deteksi (inferensi) tidak boleh lebih dari 500ms pada Mode Cepat di HP kelas *entry-level*.
-    * **Ukuran Aplikasi:** Ukuran total APK/IPA setelah di-build tidak boleh melebihi 50 MB.
-    * **Ketersediaan Offline:** Aplikasi harus berfungsi 100% tanpa koneksi internet (*on-device AI*).
+<details markdown="1">
+<summary>Click to see details</summary>
 
-    ---
+* **Performa Kecepatan:** Waktu deteksi (inferensi) tidak boleh lebih dari 500ms pada Mode Cepat di HP kelas *entry-level*.
+* **Ukuran Aplikasi:** Ukuran total APK/IPA setelah di-build tidak boleh melebihi 50 MB.
+* **Ketersediaan Offline:** Aplikasi harus berfungsi 100% tanpa koneksi internet (*on-device AI*).
+
+---
+
+</details>
 
 ## 6. Rencana Pengujian (Test Plan)
 
-??? info "Click to see details"
-    1. **Uji Threshold Akurasi:** Menguji model dengan gambar non-buah atau gambar blur untuk memastikan pesan peringatan muncul jika confidence score di bawah 80%.
-    2. **Uji Navigasi:** Memastikan transisi dari `ScannerScreen` ke `ResultScreen` berjalan mulus setelah proses capture atau gallery pick.
-    3. **Uji Kebocoran Memori:** Memastikan pembersihan memori dilakukan dengan benar saat berpindah-pindah halaman.
+<details markdown="1">
+<summary>Click to see details</summary>
+
+1. **Uji Threshold Akurasi:** Menguji model dengan gambar non-buah atau gambar blur untuk memastikan pesan peringatan muncul jika confidence score di bawah 80%.
+2. **Uji Navigasi:** Memastikan transisi dari `ScannerScreen` ke `ResultScreen` berjalan mulus setelah proses capture atau gallery pick.
+3. **Uji Kebocoran Memori:** Memastikan pembersihan memori dilakukan dengan benar saat berpindah-pindah halaman.
+
+</details>
 
